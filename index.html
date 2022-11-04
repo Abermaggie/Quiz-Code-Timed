@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Quiz- JavaScript Fundamentals</title>
+    <title>Quiz-JavaScript Fundamentals</title>
+
 </head>
 <body>
     <header>
@@ -21,18 +22,18 @@
                 Try to answer the following code related questions within the time 
                 limit.  Keep in mind that incorrect answers will penalize your score/time 
                 by ten seconds!</pre></p>
-                <button id="StartQuiz">Start Quiz</button>
+                <button id="startBtn">Start Quiz</button>
         </div>
-        <div class="wrapper">
-            <div id="triviasection">
+        <div class="container">
+            <div id="triviasection" class="hide">
                 <p class="questions"></p>
                 <div class="answers"></div>
-                    <divclass="checker">
-                        <div>Answer 1</div>
-                        <div>Answer 2</div>
-                        <div>Answer 3</div>
-                        <div>Answer 4</div>
-                    </divclass>
+                <ol>
+                    <li><button class="answer1">""</button></li>
+                    <li><button class="answer2">""</button></li>
+                    <li><button class="answer3">""</button></li>
+                    <li><button class="answer4">""</button></li>
+                        </ol>
                     <div class="checkAnswers">Right or wrong?</div>
                 </div>
             </div>
@@ -60,7 +61,7 @@
 
 
  
-    <script type="text/javascript" src="./assets/js/script.js">
+    <script src="./assets/js/scriptv2.js"></script>
     
 </body>
 </html>

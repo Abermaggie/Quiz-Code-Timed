@@ -9,9 +9,43 @@
 // Questions:
 // // Write a loop function that will insert answers  then remove them after question moves on.
 // high scores link in top left.
+// Create click event on each of the answers for wrong or right.
 
 
 
 // style:
 // // create responsive buttons that change when hovered over.
+
+var timerEl = document.getElementById('Timercontainer');
+
+// Setting initial timer at 75 seconds
+function countdown() {
+    var timeleft = 75;
+
+    var timeInterval = setInterval(function (){
+
+    },1)
+}
+
+var questiongroups = document.querySelector(".questions");
+var olTags = document.querySelector("ol");
+var liTags = doument.querySelectorAll("li");
+var startup= document.querySelector("#StartQuiz")
+var answer1 = document.querySelector("#answer1");
+var answer2 = document.querySelector("#answer2");
+var answer3 = document.querySelector("#answer3");
+var answer4 = document.querySelector("#answer4");
+
+var question1 = "Commonly used data types DO NOT Include:";
+var question2 = "The condition in an if/else statement is enclosed within _____.";
+var question3 = "Arrays in JavaScript can be used to store _____.";
+var question4 = "String values must be enclosed within _____ when being assigned to variables.";
+var question5 = "A very useful tool used during development and debugging for printing content to the debuggeris:";
+
+var answer1arr= ["strings", "quotes", "numbers and strings", "commas", "JavaScript"];
+var answer2arr= ["booleans", "curly brackets", "other arrays", "curly brackets", "terminal/bash"];
+var answer3arr= ["alerts", "parenthesis", "booleans", "quotes", "for loops"];
+var answer4arr= ["numbers", "square brackets", "all of the above", "parenthesis", "console.log"];
+// condition 1- When I click the start quiz button, 
+// I want it to display Question 1 and it's answers
 
