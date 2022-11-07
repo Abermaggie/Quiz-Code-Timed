@@ -11,12 +11,12 @@
 <body>
     <header>
         <div class="Timercontainer">
-            <h1>View Highscores</h1>
-            <h1>Time:</h1>
+            <h1 class="HighScores">View Highscores</h1>
+            <h1 id="timerEl">Timer: 00:00</h1>
         </div>
     </header>
     <main>
-        <div class= "intro">
+        <div id= "intro">
              <h1 class="h1intro">Coding Quiz Challenge</h1>
              <p class="pintro"><pre>
                 Try to answer the following code related questions within the time 
@@ -24,20 +24,19 @@
                 by ten seconds!</pre></p>
                 <button id="startBtn">Start Quiz</button>
         </div>
-        <div class="container">
-            <div id="triviasection" class="hide">
-                <p class="questions"></p>
-                <div class="answers"></div>
+        <section class="question-container">
+            <h2>First Question</h2>
+            <div class="answer-container">
                 <ol>
-                    <li><button class="answer1">""</button></li>
-                    <li><button class="answer2">""</button></li>
-                    <li><button class="answer3">""</button></li>
-                    <li><button class="answer4">""</button></li>
-                        </ol>
-                    <div class="checkAnswers">Right or wrong?</div>
-                </div>
-            </div>
+                    <li><button class="answer1" id="1" onclick="checkAnswer('1')"></button></li>
+                    <li><button class="answer2" id="2" onclick="checkAnswer('2')"></button></li>
+                    <li><button class="answer3" id="3" onclick="checkAnswer('3')"></button></li>
+                    <li><button class="answer4" id="4" onclick="checkAnswer('4')"></button></li>
+                </ol>
+             </div>
+        <div id="checkAnswers"></div>
         </div>
+        </section>
         <!-- Last page with intials and score submittal -->
         <div class="initialform">
             <h2>All done!</h2>
